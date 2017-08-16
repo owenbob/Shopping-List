@@ -3,8 +3,8 @@ from shopping_list import ShoppingList
 
 class ShoppingListTestCase(unittest.TestCase):
     def setUp(self):
-        #test to see if List has been created
         self.mylist = ShoppingList()
+        #test to see if List has been created
     def test_list(self):
         self.assertEqual(self.mylist.lst,[],msg ="List has not been created")
          #Test for add item to an empty list
